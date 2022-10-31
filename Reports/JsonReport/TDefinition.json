@@ -1,0 +1,155 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-31T06:46:24.179Z",
+        "line": 19,
+        "name": "",
+        "description": "To validate the lims login with valid username and password",
+        "id": "verifying-the-lims-web-page;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24454485400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the lims login page",
+            "match": {
+              "location": "StepDefinition.user_is_on_the_lims_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 253233100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter valid \"VM\"and\"Pas123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"VM\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Pas123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinition.user_enter_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57510500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click the login button",
+            "match": {
+              "location": "StepDefinition.user_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30094532200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click the menu",
+            "match": {
+              "location": "StepDefinition.user_click_the_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15288480200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click the Test Definition",
+            "match": {
+              "location": "StepDefinition.user_click_the_Test_Definition()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10193749400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click the test",
+            "match": {
+              "location": "StepDefinition.user_click_the_test()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"mat-select-placeholder mat-select-min-line ng-tns-c108-56 ng-star-inserted\"\u003e...\u003c/span\u003e is not clickable at point (528, 128). Other element would receive the click: \u003cdiv class\u003d\"loading-indicator ng-star-inserted\"\u003e\u003c/div\u003e\n  (Session info: MicrosoftEdge\u003d107.0.1418.26)\nBuild info: version: \u00274.3.0\u0027, revision: \u0027a4995e2c09*\u0027\nSystem info: host: \u0027DHHCLBX5PFB3\u0027, ip: \u0027192.168.1.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_341\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCommand: [237ffe6cc958e3f80eec2f4ce45f8dc6, clickElement {id\u003d70986c34-e97f-4983-b5eb-9a2a9d99b40e}]\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 107.0.1418.26, ms:edgeOptions: {debuggerAddress: localhost:63853}, msedge: {msedgedriverVersion: 107.0.1418.26 (801aa30e9054..., userDataDir: C:\\Users\\xvd71\\AppData\\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63853/devtoo..., se:cdpVersion: 107.0.1418.26, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[EdgeDriver: msedge on WINDOWS (237ffe6cc958e3f80eec2f4ce45f8dc6)] -\u003e xpath: (//span[text()\u003d\u0027Discipline\u0027])[1]]\nSession ID: 237ffe6cc958e3f80eec2f4ce45f8dc6\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\r\n\tat lims.stepDF.StepDefinition.user_enter_valid_deatails(StepDefinition.java:82)\r\n\tat ✽.user enter valid deatails(file:/C:/Users/xvd71/eclipse-workspace/TestDefinition/src/test/resources/Test.feature:11)\r\n",
+              "duration": 16418627600,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "user enter valid deatails",
+            "match": {
+              "location": "StepDefinition.user_enter_valid_deatails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click the test method",
+            "match": {
+              "location": "StepDefinition.user_click_the_test_method()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enter reference range",
+            "match": {
+              "location": "StepDefinition.user_enter_reference_range()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8400,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user enter Delta  check",
+            "match": {
+              "location": "StepDefinition.user_enter_Delta_check()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying the Lims web page",
+    "description": "",
+    "id": "verifying-the-lims-web-page",
+    "keyword": "Feature",
+    "uri": "file:/C:/Users/xvd71/eclipse-workspace/TestDefinition/src/test/resources/Test.feature",
+    "tags": []
+  }
+]
